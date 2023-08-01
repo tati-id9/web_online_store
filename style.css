@@ -201,7 +201,7 @@ body {
 }
 .main__content_title {
   color: #222;
-  font-family: Lato;
+  font-family: "Lato";
   font-size: 40px;
   font-style: normal;
   font-weight: 900;
@@ -249,7 +249,7 @@ body {
 .category_text {
   color: #FFF;
   text-align: center;
-  font-family: Lato;
+  font-family: "Lato";
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -259,7 +259,7 @@ body {
 .category_subtitle {
   color: #F16D7F;
   text-align: center;
-  font-family: Lato;
+  font-family: "Lato";
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -280,7 +280,7 @@ body {
 
 .info_title {
   color: #222;
-  font-family: Lato;
+  font-family: "Lato";
   font-size: 30px;
   font-style: normal;
   font-weight: 400;
@@ -290,7 +290,7 @@ body {
 
 .info_text {
   color: #9F9F9F;
-  font-family: Lato;
+  font-family: "Lato";
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -332,8 +332,8 @@ body {
 }
 
 .product_name {
-  color: #000;
-  font-family: Lato;
+  color: #222;
+  font-family: "Lato";
   font-size: 13px;
   font-style: normal;
   font-weight: 400;
@@ -342,7 +342,7 @@ body {
 
 .product_text {
   color: #5D5D5D;
-  font-family: Lato;
+  font-family: "Lato";
   font-size: 14px;
   font-style: normal;
   font-weight: 300;
@@ -351,7 +351,7 @@ body {
 
 .product_price {
   color: #F16D7F;
-  font-family: Lato;
+  font-family: "Lato";
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -364,20 +364,20 @@ body {
 }
 
 .btn {
-  color: #F26376;
-  font-family: Lato;
+  color: #F16D7F;
+  font-family: "Lato";
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   padding: 15px 39px 14px 39px;
-  border: 2px solid #FF6A6A;
+  border: 2px solid #F16D7F;
 }
 
 .btn:hover {
   border: 2px solid transparent;
   color: #FFF;
-  background-color: #FF6A6A;
+  background-color: #F16D7F;
   transition: all 0, 3s;
 }
 
@@ -400,7 +400,7 @@ body {
   padding-top: 28px;
   padding-bottom: 16px;
   color: #FBFBFB;
-  font-family: Lato;
+  font-family: "Lato";
   font-size: 19.96px;
   font-style: normal;
   font-weight: 400;
@@ -410,7 +410,7 @@ body {
 .opportunity_text {
   color: #FBFBFB;
   text-align: center;
-  font-family: Lato;
+  font-family: "Lato";
   font-size: 13.972px;
   font-style: normal;
   font-weight: 300;
@@ -436,9 +436,9 @@ body {
 }
 
 .application_text {
-  color: #222224;
+  color: #222;
   text-align: center;
-  font-family: Lato;
+  font-family: "Lato";
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -446,9 +446,9 @@ body {
 }
 
 .app_title {
-  color: #222224;
+  color: #222;
   text-align: center;
-  font-family: Lato;
+  font-family: "Lato";
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -456,8 +456,8 @@ body {
 }
 
 .app_text {
-  color: #222224;
-  font-family: Lato;
+  color: #222;
+  font-family: "Lato";
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -523,7 +523,7 @@ body {
   padding-top: 30px;
   padding-bottom: 30px;
   color: #FBFBFB;
-  font-family: Lato;
+  font-family: "Lato";
   font-size: 16px;
   font-style: normal;
   font-weight: 400;

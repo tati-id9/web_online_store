@@ -63,8 +63,8 @@ body {
     }
 
     &__content_title {
-        color: #222;
-        font-family: Lato;
+        color: $backBlock;
+        font-family: $fontFamilySite;
         font-size: 40px;
         font-style: normal;
         font-weight: 900;
@@ -73,7 +73,7 @@ body {
 }
 
 .vertical-stripe {
-    background-color: #F16D7F;
+    background-color: $colorSelectSite;
     width: 12px;
     height: 92px;
     margin-right: 16px;
@@ -84,7 +84,7 @@ body {
 }
 
 .pink {
-    color: #F16D7F;
+    color: $colorSelectSite;
 }
 
 /* Category */
@@ -114,7 +114,7 @@ body {
 .category_text {
     color: #FFF;
     text-align: center;
-    font-family: Lato;
+    font-family: $fontFamilySite;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -122,9 +122,9 @@ body {
 }
 
 .category_subtitle {
-    color: #F16D7F;
+    color: $colorSelectSite;
     text-align: center;
-    font-family: Lato;
+    font-family: $fontFamilySite;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -145,8 +145,8 @@ body {
 }
 
 .info_title {
-    color: #222;
-    font-family: Lato;
+    color: $backBlock;
+    font-family: $fontFamilySite;
     font-size: 30px;
     font-style: normal;
     font-weight: 400;
@@ -156,7 +156,7 @@ body {
 
 .info_text {
     color: #9F9F9F;
-    font-family: Lato;
+    font-family: $fontFamilySite;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -198,8 +198,8 @@ body {
 }
 
 .product_name {
-    color: #000;
-    font-family: Lato;
+    color: $backBlock;
+    font-family: $fontFamilySite;
     font-size: 13px;
     font-style: normal;
     font-weight: 400;
@@ -208,7 +208,7 @@ body {
 
 .product_text {
     color: #5D5D5D;
-    font-family: Lato;
+    font-family: $fontFamilySite;
     font-size: 14px;
     font-style: normal;
     font-weight: 300;
@@ -216,8 +216,8 @@ body {
 }
 
 .product_price {
-    color: #F16D7F;
-    font-family: Lato;
+    color: $colorSelectSite;
+    font-family: $fontFamilySite;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -230,26 +230,26 @@ body {
 }
 
 .btn {
-    color: #F26376;
-    font-family: Lato;
+    color: $colorSelectSite;
+    font-family: $fontFamilySite;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 
     padding: 15px 39px 14px 39px;
-    border: 2px solid #FF6A6A;
+    border: 2px solid $colorSelectSite;
 }
 
 .btn:hover {
     border: 2px solid transparent;
     color: #FFF;
-    background-color: #FF6A6A;
+    background-color: $colorSelectSite;
     transition: all 0, 3s;
 }
 
 .opportunity {
-    background-color: #222;
+    background-color: $backBlock;
     display: flex;
     padding: 104px 230px;
 }
@@ -267,7 +267,7 @@ body {
     padding-top: 28px;
     padding-bottom: 16px;
     color: #FBFBFB;
-    font-family: Lato;
+    font-family: $fontFamilySite;
     font-size: 19.96px;
     font-style: normal;
     font-weight: 400;
@@ -277,7 +277,7 @@ body {
 .opportunity_text {
     color: #FBFBFB;
     text-align: center;
-    font-family: Lato;
+    font-family: $fontFamilySite;
     font-size: 13.972px;
     font-style: normal;
     font-weight: 300;
@@ -303,9 +303,9 @@ body {
 }
 
 .application_text {
-    color: #222224;
+    color: $backBlock;
     text-align: center;
-    font-family: Lato;
+    font-family: $fontFamilySite;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -313,9 +313,9 @@ body {
 }
 
 .app_title {
-    color: #222224;
+    color: $backBlock;
     text-align: center;
-    font-family: Lato;
+    font-family: $fontFamilySite;
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
@@ -324,8 +324,8 @@ body {
 }
 
 .app_text {
-    color: #222224;
-    font-family: Lato;
+    color: $backBlock;
+    font-family: $fontFamilySite;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -353,7 +353,7 @@ body {
     border: 0;
     border-start-start-radius: 20px;
     border-end-start-radius: 20px;
-    color: #222;
+    color: $backBlock;
     font-size: 14px;
     font-weight: 400;
 }
@@ -362,7 +362,7 @@ body {
     width: 100px;
     max-height: 49px;
     border: 0;
-    background-color: #F16D7F;
+    background-color: $colorSelectSite;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     color: #FFF;
@@ -374,12 +374,12 @@ body {
 
 .application_form_submit:hover {
     background-color: #FFF;
-    color: #F16D7F;
-    border-color: #F16D7F;
+    color: $colorSelectSite;
+    border-color: $colorSelectSite;
 }
 
 .footer {
-    background-color: #222;
+    background-color: $backBlock;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -391,7 +391,7 @@ body {
     padding-top: 30px;
     padding-bottom: 30px;
     color: #FBFBFB;
-    font-family: Lato;
+    font-family: $fontFamilySite;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -415,7 +415,7 @@ body {
 }
 
 .nav_footer_icons_background:hover path {
-    fill: #F16D7F;
+    fill: $colorSelectSite;
 }
 
 .footer_icon1 {
