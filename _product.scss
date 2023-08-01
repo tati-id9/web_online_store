@@ -15,24 +15,38 @@
         font-weight: 400;
         line-height: normal;
     }
+
 }
 
-.breadcrumbs__link {
-    color: $colorTextBox;
-    font-family: $fontFamilySite;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
+.breadcrumbs {
+    &__link {
+        color: $colorTextBox;
+        font-family: $fontFamilySite;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
 
-    &_site {
-        color: $colorSelectSite;
-        font-weight: 700;
+        &_site {
+            color: $colorSelectSite;
+            font-weight: 700;
+        }
     }
-}
 
-.breadcrumbs__link:hover {
-    color: $colorSelectSite;
+    &__link:hover {
+        color: $colorSelectSite;
+    }
+
+    &_ul {
+        display: flex;
+        list-style-type: none;
+    }
+
+    &_li:not(:last-child)::after {
+        content: '/';
+        padding-right: 8px;
+        padding-left: 8px;
+    }
 }
 
 .product-main {
@@ -40,64 +54,82 @@
     align-items: center;
     justify-content: space-between;
     background-color: #F7F7F7;
+
+    &__nav {
+        background-color: #E5E5E5;
+        padding: 10px;
+    }
+
+    &__nav:hover path {
+        fill: $colorSelectSite;
+    }
+
 }
 
 .product-detail-sku {
+
     padding-bottom: 129px;
 
     &__product-info {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
 
-        &_category {
-            color: $colorSelectSite;
-            font-family: $fontFamilySite;
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 300;
-            line-height: normal;
+    &__category {
+        color: $colorSelectSite;
+        font-family: $fontFamilySite;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
 
-            text-decoration: underline solid $colorSelectSite 3px;
-            text-underline-offset: 12px;
+        text-decoration: underline solid $colorSelectSite 3px;
+        text-underline-offset: 12px;
 
-            padding-top: 64px;
-            padding-bottom: 28px;
-        }
+        padding-top: 64px;
+        padding-bottom: 28px;
 
-        &_title {
-            color: #4D4D4D;
-            font-family: $fontFamilySite;
-            font-size: 18px;
-            font-style: normal;
-            font-weight: 300;
-            line-height: normal;
+    }
 
-            padding-bottom: 48px;
-        }
+    &__title {
+        color: #4D4D4D;
+        font-family: $fontFamilySite;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
 
-        &_text {
-            color: #5E5E5E;
-            text-align: center;
-            font-family: Lato;
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 300;
-            line-height: normal;
+        padding-bottom: 48px;
+    }
 
-            padding-bottom: 32px;
-        }
+    &__text {
+        color: #5E5E5E;
+        text-align: center;
+        font-family: Lato;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
 
-        &_price {
-            color: $colorSelectSite;
-            font-family: $fontFamilySite;
-            font-size: 24px;
-            font-style: normal;
-            font-weight: 300;
-            line-height: normal;
+        padding-bottom: 32px;
+    }
 
-            padding-bottom: 68px;
-        }
+    &__price {
+        color: $colorSelectSite;
+        font-family: $fontFamilySite;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+
+        padding-bottom: 68px;
+    }
+
+    &_line {
+        height: 1px;
+        background-color: #EAEAEA;
+        margin-bottom: 68px;
     }
 
     &__parameter {
@@ -105,29 +137,29 @@
         justify-content: center;
         gap: 42px;
         padding-bottom: 48px;
+    }
 
-        &_list_menu {
-            list-style: none;
+    &__list_menu {
+        list-style: none;
 
-            display: flex;
-            align-items: center;
-            gap: 12px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
 
-            color: $colorTextBox;
-            font-family: $fontFamilySite;
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-        }
+        color: $colorTextBox;
+        font-family: $fontFamilySite;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
 
-        &_list_menu::-webkit-details-marker {
-            display: none;
-        }
+    &__list_menu::-webkit-details-marker {
+        display: none;
+    }
 
-        &_list_menu:hover path {
-            fill: $colorSelectSite;
-        }
+    &__list_menu:hover path {
+        fill: $colorSelectSite;
     }
 }
 

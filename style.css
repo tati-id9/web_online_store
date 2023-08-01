@@ -26,9 +26,17 @@
   color: #F16D7F;
   font-weight: 700;
 }
-
 .breadcrumbs__link:hover {
   color: #F16D7F;
+}
+.breadcrumbs_ul {
+  display: flex;
+  list-style-type: none;
+}
+.breadcrumbs_li:not(:last-child)::after {
+  content: "/";
+  padding-right: 8px;
+  padding-left: 8px;
 }
 
 .product-main {
@@ -36,6 +44,13 @@
   align-items: center;
   justify-content: space-between;
   background-color: #F7F7F7;
+}
+.product-main__nav {
+  background-color: #E5E5E5;
+  padding: 10px;
+}
+.product-main__nav:hover path {
+  fill: #F16D7F;
 }
 
 .product-detail-sku {
@@ -46,7 +61,7 @@
   flex-direction: column;
   align-items: center;
 }
-.product-detail-sku__product-info_category {
+.product-detail-sku__category {
   color: #F16D7F;
   font-family: "Lato";
   font-size: 14px;
@@ -59,7 +74,7 @@
   padding-top: 64px;
   padding-bottom: 28px;
 }
-.product-detail-sku__product-info_title {
+.product-detail-sku__title {
   color: #4D4D4D;
   font-family: "Lato";
   font-size: 18px;
@@ -68,7 +83,7 @@
   line-height: normal;
   padding-bottom: 48px;
 }
-.product-detail-sku__product-info_text {
+.product-detail-sku__text {
   color: #5E5E5E;
   text-align: center;
   font-family: Lato;
@@ -78,7 +93,7 @@
   line-height: normal;
   padding-bottom: 32px;
 }
-.product-detail-sku__product-info_price {
+.product-detail-sku__price {
   color: #F16D7F;
   font-family: "Lato";
   font-size: 24px;
@@ -87,13 +102,18 @@
   line-height: normal;
   padding-bottom: 68px;
 }
+.product-detail-sku_line {
+  height: 1px;
+  background-color: #EAEAEA;
+  margin-bottom: 68px;
+}
 .product-detail-sku__parameter {
   display: flex;
   justify-content: center;
   gap: 42px;
   padding-bottom: 48px;
 }
-.product-detail-sku__parameter_list_menu {
+.product-detail-sku__list_menu {
   list-style: none;
   display: flex;
   align-items: center;
@@ -105,10 +125,10 @@
   font-weight: 400;
   line-height: normal;
 }
-.product-detail-sku__parameter_list_menu::-webkit-details-marker {
+.product-detail-sku__list_menu::-webkit-details-marker {
   display: none;
 }
-.product-detail-sku__parameter_list_menu:hover path {
+.product-detail-sku__list_menu:hover path {
   fill: #F16D7F;
 }
 
