@@ -1,0 +1,143 @@
+@import 'vars';
+
+.top-head {
+    background-color: #F1E4E6;
+    min-height: 148px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__heading {
+        color: $colorSelectSite;
+        font-family: $fontFamilySite;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+
+.breadcrumbs__link {
+    color: $colorTextBox;
+    font-family: $fontFamilySite;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+
+    &_site {
+        color: $colorSelectSite;
+        font-weight: 700;
+    }
+}
+
+.breadcrumbs__link:hover {
+    color: $colorSelectSite;
+}
+
+.product-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F7F7F7;
+}
+
+.product-detail-sku {
+    padding-bottom: 129px;
+
+    &__product-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &_category {
+            color: $colorSelectSite;
+            font-family: $fontFamilySite;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+
+            text-decoration: underline solid $colorSelectSite 3px;
+            text-underline-offset: 12px;
+
+            padding-top: 64px;
+            padding-bottom: 28px;
+        }
+
+        &_title {
+            color: #4D4D4D;
+            font-family: $fontFamilySite;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+
+            padding-bottom: 48px;
+        }
+
+        &_text {
+            color: #5E5E5E;
+            text-align: center;
+            font-family: Lato;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+
+            padding-bottom: 32px;
+        }
+
+        &_price {
+            color: $colorSelectSite;
+            font-family: $fontFamilySite;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+
+            padding-bottom: 68px;
+        }
+    }
+
+    &__parameter {
+        display: flex;
+        justify-content: center;
+        gap: 42px;
+        padding-bottom: 48px;
+
+        &_list_menu {
+            list-style: none;
+
+            display: flex;
+            align-items: center;
+            gap: 12px;
+
+            color: $colorTextBox;
+            font-family: $fontFamilySite;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        &_list_menu::-webkit-details-marker {
+            display: none;
+        }
+
+        &_list_menu:hover path {
+            fill: $colorSelectSite;
+        }
+    }
+}
+
+.btn__add {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 64px;
+}
+
+.btn__add:hover path {
+    fill: #fff;
+}

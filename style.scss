@@ -1,3 +1,6 @@
+@import 'vars';
+@import 'product';
+
 * {
     margin: 0;
     padding: 0;
@@ -17,8 +20,8 @@ body {
 }
 
 .center {
-    padding-left: calc(50% - 570px);
-    padding-right: calc(50% - 570px);
+    padding-left: calc(50% - $widthSite / 2);
+    padding-right: calc(50% - $widthSite / 2);
 }
 
 /* Header */
@@ -285,6 +288,7 @@ body {
     background-image: url(img/photo\ subscribe.svg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: bottom;
     min-height: 448px;
     display: flex;
     justify-content: space-between;
@@ -448,7 +452,7 @@ body {
         gap: 39px;
     }
 
-    .main_left img {
+    .main__left img {
         width: 386px;
     }
 
@@ -533,7 +537,7 @@ body {
         margin-bottom: 64px;
     }
 
-    .main_left {
+    .main__left {
         display: none
     }
 
