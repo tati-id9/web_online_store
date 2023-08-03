@@ -1,0 +1,270 @@
+@import 'vars';
+
+summary {
+    display: block;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+.burger-menu {
+
+    &__nav {
+        width: 232px;
+        position: absolute;
+        z-index: 20;
+        background-color: #ffff;
+        padding: 37px 33px 33px;
+        top: 75px;
+    }
+
+    &__title {
+        color: #000;
+        font-size: 14px;
+        font-weight: 700;
+        margin-bottom: 24px;
+    }
+
+    &__item {
+        margin-top: 12px;
+
+        &__summary {
+            display: flex;
+            align-items: center;
+            gap: 11px;
+            padding-left: 16px;
+
+        }
+    }
+
+    &__item[open] .burger-menu__item__head {
+        color: $colorSelectSite;
+    }
+
+    &[open] {
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    }
+
+    &__head {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #6f6e6e;
+        padding: 8px 11px 11px 11px;
+        border-bottom: 1px solid #EBEBEB;
+        border-left: 5px solid $colorSelectSite;
+
+    }
+
+    &__link-box {
+        display: flex;
+        flex-direction: column;
+        gap: 11px;
+        padding: 12px 12px 20px 40px;
+    }
+
+    &__link {
+        color: #6F6E6E;
+        font-size: 14px;
+        font-weight: 400;
+
+        &:hover {
+            color: $colorSelectSite;
+        }
+    }
+}
+
+.filter-sort {
+    height: 132px;
+    padding-top: 39px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    gap: $gapGrid;
+
+}
+
+.filter {
+    padding-top: 13px;
+    width: $thirdSite;
+    position: relative;
+    z-index: 10;
+
+    &__content {
+        background-color: #ffff;
+        padding: 0px 16px 16px;
+    }
+
+
+    &[open] {
+        background: #FFF;
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    }
+
+    &[open] .filter__heading {
+        color: $colorSelectSite;
+    }
+
+    &[open] path {
+        fill: $colorSelectSite;
+    }
+
+    &__summary {
+        display: flex;
+        align-items: center;
+        gap: 11px;
+        padding-left: 16px;
+    }
+
+    &__heading {
+        color: $colorText;
+        font-family: $fontFamilySite;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    &__item {
+        margin-top: 16px;
+    }
+
+    &__item_heading {
+        color: $colorTextBox;
+        font-family: $fontFamilySite;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+        padding: 8px 11px 11px 11px;
+
+        border-bottom: 1px solid #EBEBEB;
+        border-left: 5px solid $colorSelectSite;
+    }
+
+    &__item[open] .filter__item_heading {
+        color: $colorSelectSite;
+    }
+
+    &__link-box {
+        display: flex;
+        flex-direction: column;
+        gap: 11px;
+        padding: 24px 16px;
+    }
+
+    &__link {
+        color: $colorTextBox;
+        font-family: $fontFamilySite;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+        &:hover {
+            color: $colorSelectSite;
+        }
+    }
+
+}
+
+.sort {
+    padding-top: 12px;
+    display: flex;
+    justify-content: center;
+    gap: 42px;
+
+    &__details {
+        position: relative;
+    }
+
+    &__details[open] path {
+        fill: $colorSelectSite;
+    }
+
+    &__summary {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &__summary:hover path {
+        fill: $colorSelectSite;
+    }
+
+    &__heading {
+        color: $colorTextBox;
+        font-family: $fontFamilySite;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    &__box {
+        background: #FFF;
+        box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
+        padding: 7px 30px 11px 9px;
+
+        position: absolute;
+        left: -9px;
+        top: 22px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    &__check {
+        display: flex;
+        gap: 9px;
+        align-items: center;
+
+        color: $colorTextBox;
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 400;
+    }
+}
+
+.pagination-wrapper {
+    padding-bottom: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__box {
+        border: 1px solid #EBEBEB;
+        border-radius: 5px;
+        padding: 12px 15px;
+        display: flex;
+        gap: 15px;
+    }
+
+    &__pages {
+        display: flex;
+        gap: 15px;
+
+    }
+
+    &__pages-nav {
+        color: $colorTextBox;
+        font-family: $fontFamilySite;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+
+        &:hover {
+            color: $colorSelectSite;
+        }
+
+        &:hover path {
+            fill: $colorSelectSite;
+        }
+    }
+
+
+}

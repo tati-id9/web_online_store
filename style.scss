@@ -1,5 +1,6 @@
 @import 'vars';
 @import 'product';
+@import 'catalog';
 
 * {
     margin: 0;
@@ -17,6 +18,7 @@ img {
 
 body {
     font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .center {
@@ -28,10 +30,12 @@ body {
 
 .header {
     background-color: #222;
+    max-height: 75px;
     padding-top: 18px;
     padding-bottom: 19px;
     display: flex;
     justify-content: space-around;
+    position: relative;
 
     &__right {
         display: flex;
@@ -165,8 +169,8 @@ body {
 
 .catalog {
     display: grid;
-    grid-template-columns: repeat(3, 360px);
-    gap: 30px;
+    grid-template-columns: repeat(3, $thirdSite);
+    gap: $gapGrid;
     justify-content: center;
     padding-bottom: 48px;
 }
@@ -174,6 +178,40 @@ body {
 .product {
     background-color: #F8F8F8;
     position: relative;
+
+    &_info {
+        padding: 24px 16px;
+        display: grid;
+        gap: 16px;
+    }
+
+    &_name {
+        color: $backBlock;
+        font-family: $fontFamilySite;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    &_text {
+        color: #5D5D5D;
+        font-family: $fontFamilySite;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+
+    &_price {
+        color: $colorSelectSite;
+        font-family: $fontFamilySite;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
 }
 
 .overlay {
@@ -191,38 +229,6 @@ body {
     opacity: 1;
 }
 
-.product_info {
-    padding: 24px 16px;
-    display: grid;
-    gap: 16px;
-}
-
-.product_name {
-    color: $backBlock;
-    font-family: $fontFamilySite;
-    font-size: 13px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-.product_text {
-    color: #5D5D5D;
-    font-family: $fontFamilySite;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-}
-
-.product_price {
-    color: $colorSelectSite;
-    font-family: $fontFamilySite;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
 
 .btn_link {
     display: flex;
@@ -239,49 +245,50 @@ body {
 
     padding: 15px 39px 14px 39px;
     border: 2px solid $colorSelectSite;
+
+    &:hover {
+        border: 2px solid transparent;
+        color: #FFF;
+        background-color: $colorSelectSite;
+        transition: all 0, 3s;
+    }
 }
 
-.btn:hover {
-    border: 2px solid transparent;
-    color: #FFF;
-    background-color: $colorSelectSite;
-    transition: all 0, 3s;
-}
 
 .opportunity {
     background-color: $backBlock;
     display: flex;
     padding: 104px 230px;
-}
 
-.opportunity_box {
-    flex-grow: 1;
-    padding: 0 1%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
+    &_box {
+        flex-grow: 1;
+        padding: 0 1%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 
-.opportunity_title {
-    padding-top: 28px;
-    padding-bottom: 16px;
-    color: #FBFBFB;
-    font-family: $fontFamilySite;
-    font-size: 19.96px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
+    &_title {
+        padding-top: 28px;
+        padding-bottom: 16px;
+        color: #FBFBFB;
+        font-family: $fontFamilySite;
+        font-size: 19.96px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
 
-.opportunity_text {
-    color: #FBFBFB;
-    text-align: center;
-    font-family: $fontFamilySite;
-    font-size: 13.972px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
+    &_text {
+        color: #FBFBFB;
+        text-align: center;
+        font-family: $fontFamilySite;
+        font-size: 13.972px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
 }
 
 .application {
@@ -344,39 +351,40 @@ body {
     flex-wrap: nowrap;
     margin-top: 39px;
     color: #E1E1E1;
+
+    &_input {
+        padding: 10px;
+        max-width: 256px;
+        height: 49px;
+        border: 0;
+        border-start-start-radius: 20px;
+        border-end-start-radius: 20px;
+        color: $backBlock;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    &_submit {
+        width: 100px;
+        max-height: 49px;
+        border: 0;
+        background-color: $colorSelectSite;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        color: #FFF;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 400;
+        transition: all 0.3s;
+    }
+
+    &_submit:hover {
+        background-color: #FFF;
+        color: $colorSelectSite;
+        border-color: $colorSelectSite;
+    }
 }
 
-.application_form_input {
-    padding: 10px;
-    max-width: 256px;
-    height: 49px;
-    border: 0;
-    border-start-start-radius: 20px;
-    border-end-start-radius: 20px;
-    color: $backBlock;
-    font-size: 14px;
-    font-weight: 400;
-}
-
-.application_form_submit {
-    width: 100px;
-    max-height: 49px;
-    border: 0;
-    background-color: $colorSelectSite;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    color: #FFF;
-    text-align: center;
-    font-size: 14px;
-    font-weight: 400;
-    transition: all 0.3s;
-}
-
-.application_form_submit:hover {
-    background-color: #FFF;
-    color: $colorSelectSite;
-    border-color: $colorSelectSite;
-}
 
 .footer {
     background-color: $backBlock;
@@ -385,17 +393,17 @@ body {
     align-items: center;
     padding-left: 14.375%;
     padding-right: 14.375%;
-}
 
-.footer_left {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    color: #FBFBFB;
-    font-family: $fontFamilySite;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    &_left {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        color: #FBFBFB;
+        font-family: $fontFamilySite;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
 }
 
 .nav_footer {
@@ -404,18 +412,18 @@ body {
     gap: 7.29px;
     padding-top: 23px;
     padding-bottom: 24px;
-}
 
-.nav_footer_icons {
-    position: relative;
-}
+    &_icons {
+        position: relative;
+    }
 
-.nav_footer_icon_background {
-    transition: all 0.3s;
-}
+    &_icon_background {
+        transition: all 0.3s;
+    }
 
-.nav_footer_icons_background:hover path {
-    fill: $colorSelectSite;
+    &_icons_background:hover path {
+        fill: $colorSelectSite;
+    }
 }
 
 .footer_icon1 {

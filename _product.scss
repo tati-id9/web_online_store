@@ -46,6 +46,7 @@
         content: '/';
         padding-right: 8px;
         padding-left: 8px;
+        color: $colorTextBox;
     }
 }
 
@@ -133,33 +134,7 @@
     }
 
     &__parameter {
-        display: flex;
-        justify-content: center;
-        gap: 42px;
         padding-bottom: 48px;
-    }
-
-    &__list_menu {
-        list-style: none;
-
-        display: flex;
-        align-items: center;
-        gap: 12px;
-
-        color: $colorTextBox;
-        font-family: $fontFamilySite;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-    }
-
-    &__list_menu::-webkit-details-marker {
-        display: none;
-    }
-
-    &__list_menu:hover path {
-        fill: $colorSelectSite;
     }
 }
 
@@ -168,8 +143,12 @@
     align-items: center;
     gap: 15px;
     padding-bottom: 64px;
+
+    &:hover path {
+        fill: #fff;
+    }
 }
 
-.btn__add:hover path {
-    fill: #fff;
+.catalog-box {
+    padding-bottom: 80px;
 }

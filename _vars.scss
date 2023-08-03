@@ -5,4 +5,4 @@ $backBlock: #222;
 $colorText: #000;
 $colorTextBox: #5D5D5D;
 $gapGrid: 30px;
-$thirdSite: calc(($widthSite - $gapGrid) / 3);
+$thirdSite: calc(($widthSite - $gapGrid * 2) / 3);
