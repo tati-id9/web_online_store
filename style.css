@@ -387,6 +387,31 @@ summary::-webkit-details-marker {
   margin-bottom: 57px;
   margin-top: 17px;
 }
+.main-cart__form_title {
+  color: #222;
+  font-size: 16px;
+  font-weight: 300;
+}
+.main-cart__form_input {
+  width: 359px;
+  height: 44px;
+  color: #222;
+  font-size: 13px;
+  font-weight: 300;
+}
+.main-cart__form_input[type=text] {
+  padding: 17px;
+  color: #B1B1B1;
+  font-size: 13px;
+  font-weight: 300;
+}
+.main-cart__form_submit {
+  width: 101.408px;
+  height: 35px;
+  color: #4A4A4A;
+  font-size: 11px;
+  font-weight: 300;
+}
 .main-cart__final {
   display: flex;
   flex-direction: column;
