@@ -417,6 +417,7 @@ summary::-webkit-details-marker {
   align-items: flex-end;
   gap: 12px;
   padding-bottom: 17px;
+  border-bottom: 1px solid #bebebe;
 }
 .main-cart__final_subtitle {
   color: #5D5D5D;
@@ -437,13 +438,15 @@ summary::-webkit-details-marker {
   font-style: normal;
   font-weight: 300;
   line-height: normal;
-  padding-bottom: 21px;
 }
 .main-cart__final_title::after {
   content: "$900";
   color: #F16D7F;
   font-weight: 700;
   padding-left: 70px;
+}
+.main-cart__box-button {
+  padding-top: 21px;
 }
 .main-cart__button {
   color: #FFF;

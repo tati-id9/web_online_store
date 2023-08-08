@@ -150,6 +150,8 @@
         gap: 12px;
         padding-bottom: 17px;
 
+        border-bottom: 1px solid #bebebe;
+
         &_subtitle {
             color: $colorTextBox;
             font-family: $fontFamilySite;
@@ -171,7 +173,6 @@
             font-style: normal;
             font-weight: 300;
             line-height: normal;
-            padding-bottom: 21px;
 
             &::after {
                 content: "$900";
@@ -180,6 +181,10 @@
                 padding-left: 70px;
             }
         }
+    }
+
+    &__box-button {
+        padding-top: 21px;
     }
 
     &__button {
