@@ -1,0 +1,174 @@
+@import 'vars';
+
+.main-cart {
+    padding-top: 96px;
+    padding-bottom: 128px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 11%;
+
+    /*left*/
+    &__left {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    &__product {
+        display: flex;
+        flex-direction: row;
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+
+        &_img {
+            max-width: 262px;
+        }
+
+        &_info {
+            padding: 22px 31px 62px;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+
+        &_title {
+            color: $colorText;
+            font-family: $fontFamilySite;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+
+            margin-bottom: 42px;
+            max-width: 262px;
+        }
+
+        &_text {
+            color: $colorTextBox;
+            font-family: $fontFamilySite;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+
+            &_price::after {
+                content: "300$";
+                color: $colorSelectSite;
+                padding-left: 10px;
+            }
+
+            &_color::after {
+                content: "Red";
+                padding-left: 10px;
+            }
+
+            &_size::after {
+                content: "XL";
+                padding-left: 10px;
+            }
+
+            &_quantity::after {
+                content: "2";
+                padding-left: 10px;
+            }
+
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: space-between;
+
+        &_link {
+            color: $colorText;
+            font-family: $fontFamilySite;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+
+            padding: 17px 40px;
+            border: 1px solid #A4A4A4;
+        }
+
+        &_link:hover {
+            color: $colorSelectSite;
+            border: 1px solid $colorSelectSite;
+        }
+    }
+
+    /*right*/
+    &__final-box {
+        background-color: #F1E4E6;
+        padding: 42px 34px;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 57px;
+        margin-top: 17px;
+    }
+
+
+    &__final {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 12px;
+        padding-bottom: 17px;
+
+        &_subtitle {
+            color: $colorTextBox;
+            font-family: $fontFamilySite;
+            font-size: 11px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+
+            &::after {
+                content: "$900";
+                padding-left: 70px;
+            }
+        }
+
+        &_title {
+            color: $backBlock;
+            font-family: $fontFamilySite;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            padding-bottom: 21px;
+
+            &::after {
+                content: "$900";
+                color: $colorSelectSite;
+                font-weight: 700;
+                padding-left: 70px;
+            }
+        }
+    }
+
+    &__button {
+        color: #FFF;
+        font-family: $fontFamilySite;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+
+        padding: 17px 40px;
+        border: 1px solid transparent;
+        background-color: $colorSelectSite;
+    }
+
+    &__button:hover {
+        color: $colorSelectSite;
+        border: 1px solid $colorSelectSite;
+        background-color: #FFF;
+    }
+}
