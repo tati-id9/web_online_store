@@ -298,7 +298,6 @@ summary::-webkit-details-marker {
   padding-bottom: 128px;
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: center;
   gap: 11%;
   /*left*/
