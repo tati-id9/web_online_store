@@ -465,6 +465,114 @@ summary::-webkit-details-marker {
   background-color: #FFF;
 }
 
+.regist-main {
+  padding-top: 64px;
+  padding-bottom: 96px;
+  display: flex;
+  justify-content: center;
+  gap: 11%;
+}
+.regist-main__questionnaire {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+.regist-main__questionnaire_legend {
+  color: #222;
+  font-family: "Lato";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.regist-main__questionnaire_input {
+  width: 360px;
+  height: 45px;
+  color: #B1B1B1;
+  font-family: "Lato";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  border: 1px solid #B1B1B1;
+}
+.regist-main__questionnaire_input[type=text] {
+  padding: 17px;
+}
+.regist-main__questionnaire_input[type=email] {
+  padding: 17px;
+}
+.regist-main__questionnaire_input[type=password] {
+  padding: 17px;
+}
+.regist-main__questionnaire_box-radion {
+  display: flex;
+  gap: 20px;
+}
+.regist-main__questionnaire_radion {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.regist-main__questionnaire_label {
+  color: #000;
+  font-family: "Lato";
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.regist-main__questionnaire_text {
+  color: #B1B1B1;
+  font-family: "Lato";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.regist-main__questionnaire_btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #FFF;
+  font-family: "Lato";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  max-width: 167px;
+  padding: 17px 29px;
+  border: 1px solid transparent;
+  background-color: #F16D7F;
+}
+.regist-main__questionnaire_btn:hover {
+  color: #F16D7F;
+  border: 1px solid #F16D7F;
+  background-color: #FFF;
+}
+.regist-main__questionnaire_btn:hover path {
+  fill: #F16D7F;
+}
+.regist-main__info {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+}
+.regist-main__info_text {
+  color: #000;
+  font-family: "Lato";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.regist-main__info_ul {
+  list-style: square url(img/ul.svg) inside;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
 * {
   margin: 0;
   padding: 0;

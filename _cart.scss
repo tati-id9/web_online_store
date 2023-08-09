@@ -198,11 +198,12 @@
         padding: 17px 40px;
         border: 1px solid transparent;
         background-color: $colorSelectSite;
+
+        &:hover {
+            color: $colorSelectSite;
+            border: 1px solid $colorSelectSite;
+            background-color: #FFF;
+        }
     }
 
-    &__button:hover {
-        color: $colorSelectSite;
-        border: 1px solid $colorSelectSite;
-        background-color: #FFF;
-    }
 }

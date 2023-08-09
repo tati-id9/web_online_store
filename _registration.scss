@@ -1,0 +1,128 @@
+@import 'vars';
+
+.regist-main {
+    padding-top: 64px;
+    padding-bottom: 96px;
+    display: flex;
+    justify-content: center;
+    gap: 11%;
+
+    &__questionnaire {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+
+        &_legend {
+            color: $backBlock;
+            font-family: $fontFamilySite;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+        }
+
+        &_input {
+            width: 360px;
+            height: 45px;
+            color: #B1B1B1;
+            font-family: $fontFamilySite;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            border: 1px solid #B1B1B1;
+
+            &[type=text] {
+                padding: 17px;
+            }
+
+            &[type=email] {
+                padding: 17px;
+            }
+
+            &[type=password] {
+                padding: 17px;
+            }
+        }
+
+        &_box-radion {
+            display: flex;
+            gap: 20px;
+        }
+
+        &_radion {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        &_label {
+            color: $colorText;
+            font-family: $fontFamilySite;
+            font-size: 11px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+        }
+
+        &_text {
+            color: #B1B1B1;
+            font-family: $fontFamilySite;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+        }
+
+        &_btn {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            color: #FFF;
+            font-family: $fontFamilySite;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+
+            max-width: 167px;
+            padding: 17px 29px;
+            border: 1px solid transparent;
+            background-color: $colorSelectSite;
+
+            &:hover {
+                color: $colorSelectSite;
+                border: 1px solid $colorSelectSite;
+                background-color: #FFF;
+            }
+
+            &:hover path {
+                fill: $colorSelectSite;
+            }
+        }
+
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 21px;
+
+        &_text {
+            color: $colorText;
+            font-family: $fontFamilySite;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+        }
+
+        &_ul {
+            list-style: square url(img/ul.svg) inside;
+            display: flex;
+            flex-direction: column;
+            gap: 16px
+        }
+    }
+}
